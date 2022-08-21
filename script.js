@@ -1,17 +1,27 @@
-"use strict";
+'use strict';
 
-const storeName = "Decathlon";
 
-const storeDescription = {
-   budget: 10000,
-   employees: ["Mark", "Jhon", "Anna"],
-   products: {
-      snickers: 260,
-      ball: 25
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
+
+
+const personalMovieDB = {
+   count: numberOfFilms,
+   movies: {
+
    },
-   open: true,
+   actors: {
+
+   },
+   genres: [],
+   privat: false,
 };
 
+let a = prompt('Один из последних просмотренных фильмов?'),
+b = +prompt('На сколько оцените его?'),
+   c = prompt('Один из последних просмотренных фильмов?'),
+   d = +prompt('На сколько оцените его?');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-
+console.log(personalMovieDB);
